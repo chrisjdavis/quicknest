@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D05EBBE189012C90006DFDC /* cool.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D05EBBB189012C90006DFDC /* cool.png */; };
+		0D05EBBF189012C90006DFDC /* heat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D05EBBC189012C90006DFDC /* heat.png */; };
+		0D05EBC0189012C90006DFDC /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D05EBBD189012C90006DFDC /* off.png */; };
+		0D05EBC218901C8B0006DFDC /* up-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D05EBC118901C8B0006DFDC /* up-512.png */; };
+		0D05EBC418901E220006DFDC /* down-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D05EBC318901E220006DFDC /* down-512.png */; };
+		0D05EBC61890216C0006DFDC /* up4-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D05EBC51890216C0006DFDC /* up4-512.png */; };
+		0D05EBC8189021760006DFDC /* down4-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D05EBC7189021760006DFDC /* down4-512.png */; };
+		0D05EBCC189039960006DFDC /* cool@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D05EBC9189039960006DFDC /* cool@2x.png */; };
+		0D05EBCD189039960006DFDC /* heat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D05EBCA189039960006DFDC /* heat@2x.png */; };
+		0D05EBCE189039960006DFDC /* off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D05EBCB189039960006DFDC /* off@2x.png */; };
+		0D3100BE1894899000FC3646 /* settings2-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3100BD1894899000FC3646 /* settings2-512.png */; };
+		0D3100C0189489CC00FC3646 /* farmer-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3100BF189489CC00FC3646 /* farmer-512.png */; };
+		0D3100C2189489E200FC3646 /* user_male2-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3100C1189489E200FC3646 /* user_male2-512.png */; };
+		0D50CB67188F3411002C74D2 /* php in Resources */ = {isa = PBXBuildFile; fileRef = 0D50CB66188F3411002C74D2 /* php */; };
+		0D61635F188DBAF2008CDDF7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D61635E188DBAF2008CDDF7 /* Cocoa.framework */; };
+		0D616369188DBAF2008CDDF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D616367188DBAF2008CDDF7 /* InfoPlist.strings */; };
+		0D61636B188DBAF2008CDDF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D61636A188DBAF2008CDDF7 /* main.m */; };
+		0D61636F188DBAF2008CDDF7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0D61636D188DBAF2008CDDF7 /* Credits.rtf */; };
+		0D616372188DBAF2008CDDF7 /* QNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D616371188DBAF2008CDDF7 /* QNAppDelegate.m */; };
+		0D616375188DBAF2008CDDF7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D616373188DBAF2008CDDF7 /* MainMenu.xib */; };
+		0D616377188DBAF2008CDDF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D616376188DBAF2008CDDF7 /* Images.xcassets */; };
+		0D61637E188DBAF2008CDDF7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D61637D188DBAF2008CDDF7 /* XCTest.framework */; };
+		0D61637F188DBAF2008CDDF7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D61635E188DBAF2008CDDF7 /* Cocoa.framework */; };
+		0D616387188DBAF2008CDDF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D616385188DBAF2008CDDF7 /* InfoPlist.strings */; };
+		0D616389188DBAF2008CDDF7 /* QuickNestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D616388188DBAF2008CDDF7 /* QuickNestTests.m */; };
+		0D6163DF188DBF91008CDDF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6163DE188DBF91008CDDF7 /* Security.framework */; };
+		0D6163ED188DC2B0008CDDF7 /* RFKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6163EC188DC2B0008CDDF7 /* RFKeychain.m */; };
+		0D6163F4188DCAB4008CDDF7 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6163F3188DCAB4008CDDF7 /* Quartz.framework */; };
+		0D72DB59188DECF200CAA88B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D72DB58188DECF200CAA88B /* CFNetwork.framework */; };
+		0D72DB5B188DED0B00CAA88B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D72DB5A188DED0B00CAA88B /* SystemConfiguration.framework */; };
+		0D72DB5D188DED1900CAA88B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D72DB5C188DED1900CAA88B /* CoreGraphics.framework */; };
+		0D72DB5F188DED2300CAA88B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D72DB5E188DED2300CAA88B /* libz.dylib */; };
+		0D72DB71188EBB9400CAA88B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D616362188DBAF2008CDDF7 /* CoreData.framework */; };
+		0D72DB73188EBBA200CAA88B /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D72DB72188EBBA200CAA88B /* CoreServices.framework */; };
+		0D753CC3188F70FB0052B411 /* animated.text.string.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D753CC2188F70FB0052B411 /* animated.text.string.m */; };
+		0D753CC6188F7C640052B411 /* AXStatusItemPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D753CC5188F7C640052B411 /* AXStatusItemPopup.m */; };
+		0D753CCF188F7DA70052B411 /* QNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D753CCD188F7DA70052B411 /* QNViewController.m */; };
+		0D753CD0188F7DA70052B411 /* QNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D753CCE188F7DA70052B411 /* QNViewController.xib */; };
+		0D8DB5EA18906D3E006636F7 /* device.model.php in Resources */ = {isa = PBXBuildFile; fileRef = 0D8DB5E618906D3E006636F7 /* device.model.php */; };
+		0D8DB5EB18906D3E006636F7 /* temp.decrease.php in Resources */ = {isa = PBXBuildFile; fileRef = 0D8DB5E718906D3E006636F7 /* temp.decrease.php */; };
+		0D8DB5EC18906D3E006636F7 /* temp.increase.php in Resources */ = {isa = PBXBuildFile; fileRef = 0D8DB5E818906D3E006636F7 /* temp.increase.php */; };
+		0D8DB5ED18906D3E006636F7 /* temp.model.php in Resources */ = {isa = PBXBuildFile; fileRef = 0D8DB5E918906D3E006636F7 /* temp.model.php */; };
+		0DB037D61890DE1200F169BF /* nest.api.php in Resources */ = {isa = PBXBuildFile; fileRef = 0DB037D51890DE1200F169BF /* nest.api.php */; };
+		0DB037D81890DEF800F169BF /* location.model.php in Resources */ = {isa = PBXBuildFile; fileRef = 0DB037D71890DEF800F169BF /* location.model.php */; };
+		0DB037DA189174F200F169BF /* nest.login.logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DB037D9189174F200F169BF /* nest.login.logo.png */; };
+		0DB037DD1891772200F169BF /* ITProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB037DC1891772200F169BF /* ITProgressBar.m */; };
+		0DB037E01891804500F169BF /* error-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DB037DF1891804500F169BF /* error-512.png */; };
+		0DB037E718919F4900F169BF /* nest.login.logo.16.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DB037E118919F4900F169BF /* nest.login.logo.16.png */; };
+		0DB037E818919F4900F169BF /* nest.login.logo.32.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DB037E218919F4900F169BF /* nest.login.logo.32.png */; };
+		0DB037E918919F4900F169BF /* nest.login.logo.64.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DB037E318919F4900F169BF /* nest.login.logo.64.png */; };
+		0DB037EA18919F4900F169BF /* nest.login.logo.128.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DB037E418919F4900F169BF /* nest.login.logo.128.png */; };
+		0DB037EB18919F4900F169BF /* nest.login.logo.256.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DB037E518919F4900F169BF /* nest.login.logo.256.png */; };
+		0DB037EC18919F4900F169BF /* nest.login.logo.512.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DB037E618919F4900F169BF /* nest.login.logo.512.png */; };
+		0DC3391018905C3900E1322D /* nestIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DC3390F18905C3900E1322D /* nestIcon@2x.png */; };
+		0DC3391218905C7C00E1322D /* nestIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DC3391118905C7C00E1322D /* nestIcon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D616380188DBAF2008CDDF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D616353188DBAF2008CDDF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D61635A188DBAF2008CDDF7;
+			remoteInfo = QuickNest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0D72DB75188EBBE100CAA88B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D05EBBB189012C90006DFDC /* cool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cool.png; sourceTree = "<group>"; };
+		0D05EBBC189012C90006DFDC /* heat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heat.png; sourceTree = "<group>"; };
+		0D05EBBD189012C90006DFDC /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
+		0D05EBC118901C8B0006DFDC /* up-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up-512.png"; sourceTree = "<group>"; };
+		0D05EBC318901E220006DFDC /* down-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down-512.png"; sourceTree = "<group>"; };
+		0D05EBC51890216C0006DFDC /* up4-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "up4-512.png"; sourceTree = "<group>"; };
+		0D05EBC7189021760006DFDC /* down4-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "down4-512.png"; sourceTree = "<group>"; };
+		0D05EBC9189039960006DFDC /* cool@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cool@2x.png"; path = "QuickNest/cool@2x.png"; sourceTree = "<group>"; };
+		0D05EBCA189039960006DFDC /* heat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heat@2x.png"; path = "QuickNest/heat@2x.png"; sourceTree = "<group>"; };
+		0D05EBCB189039960006DFDC /* off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "off@2x.png"; path = "QuickNest/off@2x.png"; sourceTree = "<group>"; };
+		0D3100BD1894899000FC3646 /* settings2-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings2-512.png"; sourceTree = "<group>"; };
+		0D3100BF189489CC00FC3646 /* farmer-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "farmer-512.png"; sourceTree = "<group>"; };
+		0D3100C1189489E200FC3646 /* user_male2-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_male2-512.png"; sourceTree = "<group>"; };
+		0D50CB66188F3411002C74D2 /* php */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = php; path = ../php; sourceTree = "<group>"; };
+		0D61635B188DBAF2008CDDF7 /* QuickNest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickNest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D61635E188DBAF2008CDDF7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0D616361188DBAF2008CDDF7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0D616362188DBAF2008CDDF7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0D616363188DBAF2008CDDF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0D616366188DBAF2008CDDF7 /* QuickNest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuickNest-Info.plist"; sourceTree = "<group>"; };
+		0D616368188DBAF2008CDDF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0D61636A188DBAF2008CDDF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D61636C188DBAF2008CDDF7 /* QuickNest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickNest-Prefix.pch"; sourceTree = "<group>"; };
+		0D61636E188DBAF2008CDDF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		0D616370188DBAF2008CDDF7 /* QNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QNAppDelegate.h; sourceTree = "<group>"; };
+		0D616371188DBAF2008CDDF7 /* QNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QNAppDelegate.m; sourceTree = "<group>"; };
+		0D616374188DBAF2008CDDF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0D616376188DBAF2008CDDF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0D61637C188DBAF2008CDDF7 /* QuickNestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickNestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D61637D188DBAF2008CDDF7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0D616384188DBAF2008CDDF7 /* QuickNestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuickNestTests-Info.plist"; sourceTree = "<group>"; };
+		0D616386188DBAF2008CDDF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0D616388188DBAF2008CDDF7 /* QuickNestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickNestTests.m; sourceTree = "<group>"; };
+		0D6163DE188DBF91008CDDF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0D6163EB188DC2B0008CDDF7 /* RFKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFKeychain.h; sourceTree = "<group>"; };
+		0D6163EC188DC2B0008CDDF7 /* RFKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFKeychain.m; sourceTree = "<group>"; };
+		0D6163F3188DCAB4008CDDF7 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		0D72DB58188DECF200CAA88B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0D72DB5A188DED0B00CAA88B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0D72DB5C188DED1900CAA88B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0D72DB5E188DED2300CAA88B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0D72DB72188EBBA200CAA88B /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		0D753CC2188F70FB0052B411 /* animated.text.string.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = animated.text.string.m; sourceTree = "<group>"; };
+		0D753CC4188F7C640052B411 /* AXStatusItemPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXStatusItemPopup.h; path = ../AXStatusItemPopup.h; sourceTree = "<group>"; };
+		0D753CC5188F7C640052B411 /* AXStatusItemPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXStatusItemPopup.m; path = ../AXStatusItemPopup.m; sourceTree = "<group>"; };
+		0D753CCC188F7DA70052B411 /* QNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QNViewController.h; path = ../QNViewController.h; sourceTree = "<group>"; };
+		0D753CCD188F7DA70052B411 /* QNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QNViewController.m; path = ../QNViewController.m; sourceTree = "<group>"; };
+		0D753CCE188F7DA70052B411 /* QNViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = QNViewController.xib; path = ../QNViewController.xib; sourceTree = "<group>"; };
+		0D8DB5E618906D3E006636F7 /* device.model.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = device.model.php; sourceTree = "<group>"; };
+		0D8DB5E718906D3E006636F7 /* temp.decrease.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = temp.decrease.php; sourceTree = "<group>"; };
+		0D8DB5E818906D3E006636F7 /* temp.increase.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = temp.increase.php; sourceTree = "<group>"; };
+		0D8DB5E918906D3E006636F7 /* temp.model.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = temp.model.php; sourceTree = "<group>"; };
+		0DB037D51890DE1200F169BF /* nest.api.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = nest.api.php; sourceTree = "<group>"; };
+		0DB037D71890DEF800F169BF /* location.model.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = location.model.php; sourceTree = "<group>"; };
+		0DB037D9189174F200F169BF /* nest.login.logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nest.login.logo.png; sourceTree = "<group>"; };
+		0DB037DB1891772200F169BF /* ITProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITProgressBar.h; sourceTree = "<group>"; };
+		0DB037DC1891772200F169BF /* ITProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITProgressBar.m; sourceTree = "<group>"; };
+		0DB037DF1891804500F169BF /* error-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error-512.png"; sourceTree = "<group>"; };
+		0DB037E118919F4900F169BF /* nest.login.logo.16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nest.login.logo.16.png; sourceTree = "<group>"; };
+		0DB037E218919F4900F169BF /* nest.login.logo.32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nest.login.logo.32.png; sourceTree = "<group>"; };
+		0DB037E318919F4900F169BF /* nest.login.logo.64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nest.login.logo.64.png; sourceTree = "<group>"; };
+		0DB037E418919F4900F169BF /* nest.login.logo.128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nest.login.logo.128.png; sourceTree = "<group>"; };
+		0DB037E518919F4900F169BF /* nest.login.logo.256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nest.login.logo.256.png; sourceTree = "<group>"; };
+		0DB037E618919F4900F169BF /* nest.login.logo.512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nest.login.logo.512.png; sourceTree = "<group>"; };
+		0DC3390F18905C3900E1322D /* nestIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nestIcon@2x.png"; sourceTree = "<group>"; };
+		0DC3391118905C7C00E1322D /* nestIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nestIcon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D616358188DBAF2008CDDF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D72DB73188EBBA200CAA88B /* CoreServices.framework in Frameworks */,
+				0D72DB71188EBB9400CAA88B /* CoreData.framework in Frameworks */,
+				0D72DB5F188DED2300CAA88B /* libz.dylib in Frameworks */,
+				0D72DB5D188DED1900CAA88B /* CoreGraphics.framework in Frameworks */,
+				0D72DB5B188DED0B00CAA88B /* SystemConfiguration.framework in Frameworks */,
+				0D72DB59188DECF200CAA88B /* CFNetwork.framework in Frameworks */,
+				0D6163F4188DCAB4008CDDF7 /* Quartz.framework in Frameworks */,
+				0D6163DF188DBF91008CDDF7 /* Security.framework in Frameworks */,
+				0D61635F188DBAF2008CDDF7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D616379188DBAF2008CDDF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D61637F188DBAF2008CDDF7 /* Cocoa.framework in Frameworks */,
+				0D61637E188DBAF2008CDDF7 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D616352188DBAF2008CDDF7 = {
+			isa = PBXGroup;
+			children = (
+				0D616364188DBAF2008CDDF7 /* QuickNest */,
+				0D616382188DBAF2008CDDF7 /* QuickNestTests */,
+				0D61635D188DBAF2008CDDF7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0D61635C188DBAF2008CDDF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D61635B188DBAF2008CDDF7 /* QuickNest.app */,
+				0D61637C188DBAF2008CDDF7 /* QuickNestTests.xctest */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0D61635D188DBAF2008CDDF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D72DB72188EBBA200CAA88B /* CoreServices.framework */,
+				0D72DB5E188DED2300CAA88B /* libz.dylib */,
+				0D72DB5C188DED1900CAA88B /* CoreGraphics.framework */,
+				0D72DB5A188DED0B00CAA88B /* SystemConfiguration.framework */,
+				0D72DB58188DECF200CAA88B /* CFNetwork.framework */,
+				0D6163F3188DCAB4008CDDF7 /* Quartz.framework */,
+				0D6163DE188DBF91008CDDF7 /* Security.framework */,
+				0D61635E188DBAF2008CDDF7 /* Cocoa.framework */,
+				0D61637D188DBAF2008CDDF7 /* XCTest.framework */,
+				0D616360188DBAF2008CDDF7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D616360188DBAF2008CDDF7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D616361188DBAF2008CDDF7 /* AppKit.framework */,
+				0D616362188DBAF2008CDDF7 /* CoreData.framework */,
+				0D616363188DBAF2008CDDF7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0D616364188DBAF2008CDDF7 /* QuickNest */ = {
+			isa = PBXGroup;
+			children = (
+				0DB037DE1891772C00F169BF /* CustomProgressBar */,
+				0D8DB5EE18906DA9006636F7 /* PHP */,
+				0D753CD9188F8A7D0052B411 /* imagery */,
+				0D753CCC188F7DA70052B411 /* QNViewController.h */,
+				0D753CCD188F7DA70052B411 /* QNViewController.m */,
+				0D753CCE188F7DA70052B411 /* QNViewController.xib */,
+				0D753CC4188F7C640052B411 /* AXStatusItemPopup.h */,
+				0D753CC5188F7C640052B411 /* AXStatusItemPopup.m */,
+				0D50CB66188F3411002C74D2 /* php */,
+				0D6163EE188DC2B5008CDDF7 /* KeyChain */,
+				0D616370188DBAF2008CDDF7 /* QNAppDelegate.h */,
+				0D616371188DBAF2008CDDF7 /* QNAppDelegate.m */,
+				0D616373188DBAF2008CDDF7 /* MainMenu.xib */,
+				0D616376188DBAF2008CDDF7 /* Images.xcassets */,
+				0D616365188DBAF2008CDDF7 /* Supporting Files */,
+				0D753CC2188F70FB0052B411 /* animated.text.string.m */,
+				0D61635C188DBAF2008CDDF7 /* Products */,
+			);
+			path = QuickNest;
+			sourceTree = "<group>";
+		};
+		0D616365188DBAF2008CDDF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D616366188DBAF2008CDDF7 /* QuickNest-Info.plist */,
+				0D616367188DBAF2008CDDF7 /* InfoPlist.strings */,
+				0D61636A188DBAF2008CDDF7 /* main.m */,
+				0D61636C188DBAF2008CDDF7 /* QuickNest-Prefix.pch */,
+				0D61636D188DBAF2008CDDF7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D616382188DBAF2008CDDF7 /* QuickNestTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D616388188DBAF2008CDDF7 /* QuickNestTests.m */,
+				0D616383188DBAF2008CDDF7 /* Supporting Files */,
+			);
+			path = QuickNestTests;
+			sourceTree = "<group>";
+		};
+		0D616383188DBAF2008CDDF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D616384188DBAF2008CDDF7 /* QuickNestTests-Info.plist */,
+				0D616385188DBAF2008CDDF7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D6163EE188DC2B5008CDDF7 /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				0D6163EB188DC2B0008CDDF7 /* RFKeychain.h */,
+				0D6163EC188DC2B0008CDDF7 /* RFKeychain.m */,
+			);
+			name = KeyChain;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0D753CD9188F8A7D0052B411 /* imagery */ = {
+			isa = PBXGroup;
+			children = (
+				0D3100C1189489E200FC3646 /* user_male2-512.png */,
+				0D3100BF189489CC00FC3646 /* farmer-512.png */,
+				0D3100BD1894899000FC3646 /* settings2-512.png */,
+				0DB037E118919F4900F169BF /* nest.login.logo.16.png */,
+				0DB037E218919F4900F169BF /* nest.login.logo.32.png */,
+				0DB037E318919F4900F169BF /* nest.login.logo.64.png */,
+				0DB037E418919F4900F169BF /* nest.login.logo.128.png */,
+				0DB037E518919F4900F169BF /* nest.login.logo.256.png */,
+				0DB037E618919F4900F169BF /* nest.login.logo.512.png */,
+				0DB037DF1891804500F169BF /* error-512.png */,
+				0DB037D9189174F200F169BF /* nest.login.logo.png */,
+				0DC3391118905C7C00E1322D /* nestIcon.png */,
+				0DC3390F18905C3900E1322D /* nestIcon@2x.png */,
+				0D05EBC9189039960006DFDC /* cool@2x.png */,
+				0D05EBCA189039960006DFDC /* heat@2x.png */,
+				0D05EBCB189039960006DFDC /* off@2x.png */,
+				0D05EBC7189021760006DFDC /* down4-512.png */,
+				0D05EBC51890216C0006DFDC /* up4-512.png */,
+				0D05EBC318901E220006DFDC /* down-512.png */,
+				0D05EBC118901C8B0006DFDC /* up-512.png */,
+				0D05EBBB189012C90006DFDC /* cool.png */,
+				0D05EBBC189012C90006DFDC /* heat.png */,
+				0D05EBBD189012C90006DFDC /* off.png */,
+			);
+			name = imagery;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0D8DB5EE18906DA9006636F7 /* PHP */ = {
+			isa = PBXGroup;
+			children = (
+				0D8DB5E618906D3E006636F7 /* device.model.php */,
+				0D8DB5E718906D3E006636F7 /* temp.decrease.php */,
+				0D8DB5E818906D3E006636F7 /* temp.increase.php */,
+				0D8DB5E918906D3E006636F7 /* temp.model.php */,
+				0DB037D51890DE1200F169BF /* nest.api.php */,
+				0DB037D71890DEF800F169BF /* location.model.php */,
+			);
+			name = PHP;
+			sourceTree = "<group>";
+		};
+		0DB037DE1891772C00F169BF /* CustomProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				0DB037DB1891772200F169BF /* ITProgressBar.h */,
+				0DB037DC1891772200F169BF /* ITProgressBar.m */,
+			);
+			name = CustomProgressBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D61635A188DBAF2008CDDF7 /* QuickNest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D61638C188DBAF2008CDDF7 /* Build configuration list for PBXNativeTarget "QuickNest" */;
+			buildPhases = (
+				0D616357188DBAF2008CDDF7 /* Sources */,
+				0D616358188DBAF2008CDDF7 /* Frameworks */,
+				0D616359188DBAF2008CDDF7 /* Resources */,
+				0D72DB75188EBBE100CAA88B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickNest;
+			productName = QuickNest;
+			productReference = 0D61635B188DBAF2008CDDF7 /* QuickNest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D61637B188DBAF2008CDDF7 /* QuickNestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D61638F188DBAF2008CDDF7 /* Build configuration list for PBXNativeTarget "QuickNestTests" */;
+			buildPhases = (
+				0D616378188DBAF2008CDDF7 /* Sources */,
+				0D616379188DBAF2008CDDF7 /* Frameworks */,
+				0D61637A188DBAF2008CDDF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D616381188DBAF2008CDDF7 /* PBXTargetDependency */,
+			);
+			name = QuickNestTests;
+			productName = QuickNestTests;
+			productReference = 0D61637C188DBAF2008CDDF7 /* QuickNestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D616353188DBAF2008CDDF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = QN;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = LEAGUEOFBEARDS;
+				TargetAttributes = {
+					0D61635A188DBAF2008CDDF7 = {
+						DevelopmentTeam = 4ZP9P6VDD5;
+					};
+					0D61637B188DBAF2008CDDF7 = {
+						TestTargetID = 0D61635A188DBAF2008CDDF7;
+					};
+				};
+			};
+			buildConfigurationList = 0D616356188DBAF2008CDDF7 /* Build configuration list for PBXProject "QuickNest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D616352188DBAF2008CDDF7;
+			productRefGroup = 0D61635C188DBAF2008CDDF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D61635A188DBAF2008CDDF7 /* QuickNest */,
+				0D61637B188DBAF2008CDDF7 /* QuickNestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D616359188DBAF2008CDDF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC3391218905C7C00E1322D /* nestIcon.png in Resources */,
+				0D05EBCC189039960006DFDC /* cool@2x.png in Resources */,
+				0D8DB5EC18906D3E006636F7 /* temp.increase.php in Resources */,
+				0D616369188DBAF2008CDDF7 /* InfoPlist.strings in Resources */,
+				0DB037D61890DE1200F169BF /* nest.api.php in Resources */,
+				0DB037EB18919F4900F169BF /* nest.login.logo.256.png in Resources */,
+				0D8DB5ED18906D3E006636F7 /* temp.model.php in Resources */,
+				0D05EBC61890216C0006DFDC /* up4-512.png in Resources */,
+				0D3100C2189489E200FC3646 /* user_male2-512.png in Resources */,
+				0D616377188DBAF2008CDDF7 /* Images.xcassets in Resources */,
+				0D3100BE1894899000FC3646 /* settings2-512.png in Resources */,
+				0D753CD0188F7DA70052B411 /* QNViewController.xib in Resources */,
+				0D61636F188DBAF2008CDDF7 /* Credits.rtf in Resources */,
+				0D8DB5EB18906D3E006636F7 /* temp.decrease.php in Resources */,
+				0D50CB67188F3411002C74D2 /* php in Resources */,
+				0D05EBC8189021760006DFDC /* down4-512.png in Resources */,
+				0D616375188DBAF2008CDDF7 /* MainMenu.xib in Resources */,
+				0DC3391018905C3900E1322D /* nestIcon@2x.png in Resources */,
+				0DB037EC18919F4900F169BF /* nest.login.logo.512.png in Resources */,
+				0D05EBBE189012C90006DFDC /* cool.png in Resources */,
+				0DB037E818919F4900F169BF /* nest.login.logo.32.png in Resources */,
+				0DB037D81890DEF800F169BF /* location.model.php in Resources */,
+				0D3100C0189489CC00FC3646 /* farmer-512.png in Resources */,
+				0D05EBBF189012C90006DFDC /* heat.png in Resources */,
+				0DB037E918919F4900F169BF /* nest.login.logo.64.png in Resources */,
+				0D05EBCE189039960006DFDC /* off@2x.png in Resources */,
+				0DB037E01891804500F169BF /* error-512.png in Resources */,
+				0D05EBC218901C8B0006DFDC /* up-512.png in Resources */,
+				0D05EBC418901E220006DFDC /* down-512.png in Resources */,
+				0DB037DA189174F200F169BF /* nest.login.logo.png in Resources */,
+				0DB037EA18919F4900F169BF /* nest.login.logo.128.png in Resources */,
+				0DB037E718919F4900F169BF /* nest.login.logo.16.png in Resources */,
+				0D8DB5EA18906D3E006636F7 /* device.model.php in Resources */,
+				0D05EBCD189039960006DFDC /* heat@2x.png in Resources */,
+				0D05EBC0189012C90006DFDC /* off.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D61637A188DBAF2008CDDF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D616387188DBAF2008CDDF7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D616357188DBAF2008CDDF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DB037DD1891772200F169BF /* ITProgressBar.m in Sources */,
+				0D61636B188DBAF2008CDDF7 /* main.m in Sources */,
+				0D753CCF188F7DA70052B411 /* QNViewController.m in Sources */,
+				0D616372188DBAF2008CDDF7 /* QNAppDelegate.m in Sources */,
+				0D6163ED188DC2B0008CDDF7 /* RFKeychain.m in Sources */,
+				0D753CC6188F7C640052B411 /* AXStatusItemPopup.m in Sources */,
+				0D753CC3188F70FB0052B411 /* animated.text.string.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D616378188DBAF2008CDDF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D616389188DBAF2008CDDF7 /* QuickNestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D616381188DBAF2008CDDF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D61635A188DBAF2008CDDF7 /* QuickNest */;
+			targetProxy = 0D616380188DBAF2008CDDF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D616367188DBAF2008CDDF7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D616368188DBAF2008CDDF7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0D61636D188DBAF2008CDDF7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D61636E188DBAF2008CDDF7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		0D616373188DBAF2008CDDF7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D616374188DBAF2008CDDF7 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		0D616385188DBAF2008CDDF7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D616386188DBAF2008CDDF7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D61638A188DBAF2008CDDF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0D61638B188DBAF2008CDDF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0D61638D188DBAF2008CDDF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickNest/QuickNest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "QuickNest/QuickNest-Info.plist";
+				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "--deep";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0D61638E188DBAF2008CDDF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickNest/QuickNest-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "QuickNest/QuickNest-Info.plist";
+				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "--deep";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0D616390188DBAF2008CDDF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuickNest.app/Contents/MacOS/QuickNest";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickNest/QuickNest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "QuickNestTests/QuickNestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0D616391188DBAF2008CDDF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuickNest.app/Contents/MacOS/QuickNest";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickNest/QuickNest-Prefix.pch";
+				INFOPLIST_FILE = "QuickNestTests/QuickNestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D616356188DBAF2008CDDF7 /* Build configuration list for PBXProject "QuickNest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D61638A188DBAF2008CDDF7 /* Debug */,
+				0D61638B188DBAF2008CDDF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D61638C188DBAF2008CDDF7 /* Build configuration list for PBXNativeTarget "QuickNest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D61638D188DBAF2008CDDF7 /* Debug */,
+				0D61638E188DBAF2008CDDF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D61638F188DBAF2008CDDF7 /* Build configuration list for PBXNativeTarget "QuickNestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D616390188DBAF2008CDDF7 /* Debug */,
+				0D616391188DBAF2008CDDF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D616353188DBAF2008CDDF7 /* Project object */;
+}
