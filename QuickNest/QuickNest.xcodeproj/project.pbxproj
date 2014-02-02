@@ -17,6 +17,8 @@
 		0D05EBCC189039960006DFDC /* cool@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D05EBC9189039960006DFDC /* cool@2x.png */; };
 		0D05EBCD189039960006DFDC /* heat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D05EBCA189039960006DFDC /* heat@2x.png */; };
 		0D05EBCE189039960006DFDC /* off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D05EBCB189039960006DFDC /* off@2x.png */; };
+		0D1C9620189C416F00E460FE /* ph7 in Resources */ = {isa = PBXBuildFile; fileRef = 0D1C961F189C416F00E460FE /* ph7 */; };
+		0D1F6396189C13400038EC96 /* php.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 0D1F6395189C13400038EC96 /* php.entitlements */; };
 		0D3100BE1894899000FC3646 /* settings2-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3100BD1894899000FC3646 /* settings2-512.png */; };
 		0D3100C0189489CC00FC3646 /* farmer-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3100BF189489CC00FC3646 /* farmer-512.png */; };
 		0D3100C2189489E200FC3646 /* user_male2-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3100C1189489E200FC3646 /* user_male2-512.png */; };
@@ -97,6 +99,9 @@
 		0D05EBC9189039960006DFDC /* cool@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cool@2x.png"; path = "QuickNest/cool@2x.png"; sourceTree = "<group>"; };
 		0D05EBCA189039960006DFDC /* heat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "heat@2x.png"; path = "QuickNest/heat@2x.png"; sourceTree = "<group>"; };
 		0D05EBCB189039960006DFDC /* off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "off@2x.png"; path = "QuickNest/off@2x.png"; sourceTree = "<group>"; };
+		0D169A97189B671000C34FA6 /* QuickNest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = QuickNest.entitlements; sourceTree = "<group>"; };
+		0D1C961F189C416F00E460FE /* ph7 */ = {isa = PBXFileReference; lastKnownFileType = file; name = ph7; path = ../ph7; sourceTree = "<group>"; };
+		0D1F6395189C13400038EC96 /* php.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = php.entitlements; sourceTree = "<group>"; };
 		0D3100BD1894899000FC3646 /* settings2-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings2-512.png"; sourceTree = "<group>"; };
 		0D3100BF189489CC00FC3646 /* farmer-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "farmer-512.png"; sourceTree = "<group>"; };
 		0D3100C1189489E200FC3646 /* user_male2-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_male2-512.png"; sourceTree = "<group>"; };
@@ -233,6 +238,8 @@
 		0D616364188DBAF2008CDDF7 /* QuickNest */ = {
 			isa = PBXGroup;
 			children = (
+				0D1F6395189C13400038EC96 /* php.entitlements */,
+				0D169A97189B671000C34FA6 /* QuickNest.entitlements */,
 				0DB037DE1891772C00F169BF /* CustomProgressBar */,
 				0D8DB5EE18906DA9006636F7 /* PHP */,
 				0D753CD9188F8A7D0052B411 /* imagery */,
@@ -241,6 +248,7 @@
 				0D753CCE188F7DA70052B411 /* QNViewController.xib */,
 				0D753CC4188F7C640052B411 /* AXStatusItemPopup.h */,
 				0D753CC5188F7C640052B411 /* AXStatusItemPopup.m */,
+				0D1C961F189C416F00E460FE /* ph7 */,
 				0D50CB66188F3411002C74D2 /* php */,
 				0D6163EE188DC2B5008CDDF7 /* KeyChain */,
 				0D616370188DBAF2008CDDF7 /* QNAppDelegate.h */,
@@ -398,6 +406,11 @@
 				TargetAttributes = {
 					0D61635A188DBAF2008CDDF7 = {
 						DevelopmentTeam = 4ZP9P6VDD5;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 					0D61637B188DBAF2008CDDF7 = {
 						TestTargetID = 0D61635A188DBAF2008CDDF7;
@@ -450,6 +463,7 @@
 				0D05EBBE189012C90006DFDC /* cool.png in Resources */,
 				0DB037E818919F4900F169BF /* nest.login.logo.32.png in Resources */,
 				0DB037D81890DEF800F169BF /* location.model.php in Resources */,
+				0D1F6396189C13400038EC96 /* php.entitlements in Resources */,
 				0D3100C0189489CC00FC3646 /* farmer-512.png in Resources */,
 				0D05EBBF189012C90006DFDC /* heat.png in Resources */,
 				0DB037E918919F4900F169BF /* nest.login.logo.64.png in Resources */,
@@ -461,6 +475,7 @@
 				0DB037EA18919F4900F169BF /* nest.login.logo.128.png in Resources */,
 				0DB037E718919F4900F169BF /* nest.login.logo.16.png in Resources */,
 				0D8DB5EA18906D3E006636F7 /* device.model.php in Resources */,
+				0D1C9620189C416F00E460FE /* ph7 in Resources */,
 				0D05EBCD189039960006DFDC /* heat@2x.png in Resources */,
 				0D05EBC0189012C90006DFDC /* off.png in Resources */,
 			);
@@ -617,7 +632,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_ENTITLEMENTS = QuickNest/QuickNest.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuickNest/QuickNest-Prefix.pch";
@@ -637,8 +653,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_ENTITLEMENTS = QuickNest/QuickNest.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuickNest/QuickNest-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
